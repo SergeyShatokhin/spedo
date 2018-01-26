@@ -34,9 +34,9 @@ gulp.task('templates:compile', function() {
 });
 
 /* ------------ Styles compile ------------- */
-gulp.task('styles:compile', function () {
+gulp.task('styles:compile', () => {
   return gulp.src('source/styles/main.sass')
-    .pipe(sass({outputStyle: 'nested'})
+    .pipe(sass({outputStyle: 'nested'}))
     .on('error', notify.onError(function(err) {
             return {
                 title: 'Styles',
@@ -69,7 +69,7 @@ gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images'));
 /* ------------ Watchers ------------- */
 gulp.task('watch', function() {
   gulp.watch('source/template/**/*.pug', gulp.series('templates:compile'));
-  gulp.watch('source/styles/**/*.scss', gulp.series('styles:compile'));
+  gulp.watch('source/styles/**/*.sass', gulp.series('styles:compile'));
 });
 
 /* ------------ Default ------------- */
