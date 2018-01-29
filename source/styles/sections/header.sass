@@ -1,3 +1,5 @@
+.header
+	overflow: hidden
 .header__top 
 	background-color: #000
 	
@@ -42,7 +44,10 @@
 	i
 		margin-right: 12px
 
-
+	&:hover
+		color: #ccc
+	&:active
+		color: darken(#ccc, 20%)
 
 .flag::before
 	top: 3px
@@ -62,4 +67,19 @@
 	margin-right: 80px
 
 .card
+	position: relative
 	margin-right: 25px
+	&::after
+		position: absolute
+		top: -7px
+		right: -7px
+		width: 24px
+		height: 20px
+		border-radius: 50%
+		background-color: red
+		color: #fff
+		text-align: center
+		font-size: 7px
+		display: table
+		content: "1"
+

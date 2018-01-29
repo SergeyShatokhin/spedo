@@ -1,6 +1,6 @@
 .wrapper
 	position: relative
-	background-image: url("../images/slider-girl1.png"), linear-gradient(to bottom, #fff 40.972%, #baf9c4 40.972%, #baf9c4 100%)
+	background-image: url("../images/slider-girl1.png"), linear-gradient(to bottom, #fff 39.534%, #baf9c4 39.534%, #baf9c4 100%)
 	background-position: top 260px right 230px, 0 0
 	background-repeat: no-repeat
 	
@@ -14,6 +14,7 @@
 	
 
 .slider__text
+	margin-bottom: 30px
 	font-size: 1.5rem
 	line-height: 1.875rem
 	font-family: Cairo
@@ -21,12 +22,18 @@
 	letter-spacing: 0.075rem
 	color: #4b564d
 
-.slider__header
+.slider__header1
 	width: 480px
 	text-align: left
-	margin-bottom: 0
+	margin-bottom: 30px
+
+.slider__header2
+	width: 480px
+	text-align: left
+	margin-bottom: 30px
 
 .slider__description
+	margin-bottom: 40px
 	width: 450px
 	font-size: 0.875rem
 	line-height: 1.5rem
@@ -63,10 +70,13 @@ input[type="radio"]
 
 .button
 	display: inline-block
+	width: 150px
+	height: 50px
+	text-align: center
 	font-size: 0.875rem
 	font-family: Georgia
-	line-height: 1.5rem
-	padding: 20px 25px
+	line-height: 3.125rem
+	// padding: 20px 25px
 	text-transform: uppercase
 	letter-spacing: 0.075rem
 	background-color: #000
@@ -75,12 +85,12 @@ input[type="radio"]
 
 
 #btn-1:checked~ .wrapper
-	background-image: url("../images/slider-girl1.png"), linear-gradient(to bottom, #fff 40.972%, #baf9c4 40.972%, #baf9c4 100%)
-	background-position: top 260px right 230px, 0 0
+	background-image: url("../images/slider-girl1.png"), linear-gradient(to bottom, #fff 39.534%, #baf9c4 39.534%, #baf9c4 100%)
+	background-position: top 255px right 330px, 0 0
 	background-repeat: no-repeat	
 
 #btn-2:checked~ .wrapper
-	background-image: url("../images/slider-girl2.png"), linear-gradient(to bottom, #fff 40.972%, pink 40.972%, pink 100%)
+	background-image: url("../images/slider-girl2.png"), linear-gradient(to bottom, #fff 39.534%, pink 39.534%, pink 100%)
 	background-position: top 260px right 160px, 0 0
 	background-repeat: no-repeat
 

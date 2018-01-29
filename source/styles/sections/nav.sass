@@ -1,5 +1,5 @@
 .nav
-	padding: 100px 0
+	padding: 100px 0 93px
 
 .site-header
 	font-family: Georgia
@@ -7,10 +7,16 @@
 	line-height: 1.875rem
 	font-weight: bold
 	text-transform: uppercase
+	letter-spacing: 0.01rem
 	text-align: center
-	margin-bottom: 100px
+	color: #313131
+	margin-bottom: 93px
 
-.menu__item
+.main-menu__list
+	display: flex;
+	justify-content: space-between
+
+.main-menu__item
 	display: inline-block
 
 	a
@@ -18,9 +24,61 @@
 		color: #818181
 		text-transform: uppercase
 		letter-spacing: 0.075rem
+		&:hover
+			color: darken(#818181, 20%)
+		&:active
+			color: darken(#818181, 30%)
 
-.nav__left
-	float: left 
 
-.nav__right
+.main-menu
+	float: left
+	padding-left: 15px
+	width: 620px
+
+.search
+	position: relative
+	box-sizing: border-box
 	float: right
+	margin-right: 15px
+	width: 100px;
+
+	input
+		box-sizing: border-box
+		width: 100%
+		border: none;
+		outline: none;
+		padding-left: 25px
+		color: #818181
+
+	
+
+	button
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 25px;
+		width: 25px;
+		cursor: pointer;
+		border: none;
+		outline: none;
+		background-color: transparent
+
+		&::before
+			content: "\f002";
+			font-family: FontAwesome;
+			font-size: 16px;
+			color: #818181;
+
+
+
+input::-webkit-input-placeholder 
+	font-family: Georgia
+	font-size: 0.75rem
+	text-align: right
+	color: #818181
+	text-transform: uppercase
+	letter-spacing: 0.075rem
+
+input:focus
+	&::-webkit-input-placeholder 
+		color: transparent
