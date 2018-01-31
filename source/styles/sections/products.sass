@@ -9,6 +9,10 @@
 .products__item
 	position: relative
 	margin-bottom: 63px
+	&:hover
+		.products__action
+			display: block
+
 
 .products__pic
 	display: block
@@ -32,7 +36,12 @@
 	padding: 17px 25px
 	background-color: pink
 
-.products__title
+.product__promo_action
+	position: static
+	background-color: #baf9c4
+	z-index: 10
+
+.products__title, .products__sizes, .products__color
 	span
 		font-size: 14px
 		line-height: 18px
@@ -50,6 +59,33 @@
 	line-height: 18px
 	font-weight: bold
 	color: cyan
+
+
+.products__action
+	position: absolute
+	display: none
+	width: 359px
+	height: 452px
+	background-color: transparent
+	z-index: 5
+
+.products__action-transparent
+	width: 359px
+	height: 252px
+	background-color: rgba(#cff, .75)
+
+.products__action-white
+	width: 359px
+	height: 200px
+	background-color: #fff
+
+.products__sizes, .products__color
+	padding: 14px 25px
+	
+.products__color-img
+	display: block
+		
+.products__sizes-text
 	
 		
 	
